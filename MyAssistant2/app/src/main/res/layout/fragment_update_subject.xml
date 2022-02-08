@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="view.UpdateSubject">
+
+    <EditText
+        android:id="@+id/UpdateSubjectSubjectsNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nazwa przedmiotu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/UpdateSubjectWeekDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Dzień tygodnia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateSubjectSubjectsNameTextView" />
+
+    <EditText
+        android:id="@+id/UpdateSubjectStartHourTextView"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Godzina rozpoczęcia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/UpdateSubjectEndHourTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateSubjectWeekDayTextView" />
+
+    <EditText
+        android:id="@+id/UpdateSubjectEndHourTextView"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Godzina zakńczenia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/UpdateSubjectStartHourTextView"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateSubjectWeekDayTextView" />
+
+    <Button
+        android:id="@+id/UpdateSubjectUpdateSubjectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modyfikuj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateSubjectWeekDayTextView" />
+
+    <ImageButton
+        android:id="@+id/UpdateSubjectDeleteSubjectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#F3C8BB"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:tint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateSubjectUpdateSubjectButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
